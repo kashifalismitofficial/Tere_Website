@@ -1,0 +1,851 @@
+@font-face {
+    font-family: 'gil-bold';
+    src: url(Font/Gilroy-ExtraBold.otf);
+}
+
+@font-face {
+    font-family: 'gil-light';
+    src: url(Font/Gilroy-Light.otf);
+}
+
+body {
+    background-color: #F9F9F9;
+}
+
+/* navbar start  */
+
+.brg-1 i {
+    color: #828080;
+    display: block;
+}
+
+.nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 174px;
+
+}
+
+.nav-2 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+
+}
+
+.manu {
+    display: flex;
+    gap: 30px;
+    list-style-type: none;
+    margin: 0px;
+}
+
+.manu a {
+    text-decoration: none;
+    color: black;
+    font-family: 'gil-light';
+    text-transform: capitalize;
+    cursor: pointer;
+    display: inline;
+}
+
+.manu li {
+    display: flex;
+
+}
+
+.btn-1 {
+    padding: 10px 25px;
+    background-color: #75BF7A;
+    border: none;
+    font-family: 'gil-light';
+    color: #fff9ff;
+    margin-left: 30px;
+    border-radius: 5px;
+}
+@media only screen and (max-width: 8000px) {
+    .brg-1 i {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 900px) {
+    .brg-1 i {
+        display: block;
+        margin: 0px;
+        font-size: 32px;
+        position: relative;
+        top: 10px;
+        left: 100;
+        border: 1px solid #cfcfcf;
+        padding: 10px;
+        border-radius: 5px;
+    }
+
+    .manu>li>a {
+        display: none;
+    }
+
+    .btn-1 {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 413px) {
+    .brg-1 i {
+        display: flex;
+        margin: 0px;
+        font-size: 25px;
+        position: relative;
+        top: 10px;
+        left: 0px;
+        border: 1px solid #cfcfcf;
+        padding: 8px;
+        border-radius: 5px;
+    }
+
+    .manu>li>a {
+        display: none;
+    }
+
+    .btn-1 {
+        display: none;
+    }
+
+    .logo>img {
+        width: 140px;
+    }
+}
+
+
+
+
+/* navbar end */
+
+/* ............hero_Section_Start............ */
+
+/* hero_heading_start */
+.parent_hero {
+    background-color: #f9f9f9;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    width: 100%;
+
+
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.heading_section {
+    margin-top: 100px;
+    margin-bottom: 100px;
+    width: 410px;
+}
+
+.heading_section h1 {
+    font-family: 'gil-bold';
+}
+.heading_section
+{ 
+    width: 100%;
+}
+
+.heading_section p {
+    width: 400px;
+    font-family: 'gil-light';
+    color: #9E9DA2;
+}
+
+.gap-play {
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+.play img {
+    width: 190px;
+}
+
+/* hero_heading_end */
+
+/* hero_image_start */
+.img_of_ride img {
+    width: 400px;
+
+}
+
+/* hero_image_end */
+@media only screen and (max-width: 413px) {
+    .container {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .heading_section h3
+{ 
+    width: 100%;
+    text-align: center;
+}
+}
+
+@media only screen and (max-width: 819px) {
+    .container {
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+}
+
+/* ............hero_Section_end............ */
+
+/* Search_bar_start */
+.parent_search {
+    background-color: #f9f9f9;
+}
+
+.Search-bar {
+
+    background-color: #75BF7A;
+    /* margin: 80px 0px; */
+    border-radius: 5px;
+    padding: 20px 40px;
+    height: 120px;
+    align-items: center;
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+
+
+}
+
+.Search-bar h2 {
+    font-size: 18.6px;
+    font-family: 'gil-light';
+    color: #fff;
+    width: 250px;
+}
+
+.input {
+    padding: 10px;
+    width: 50%;
+    /* height: 40px; */
+    border: none;
+    border-radius: 5px;
+    font-family: 'gil-light';
+}
+
+/* .right
+{
+    display: flex;
+    justify-content: space-around;
+} */
+.button-submit {
+    border: none;
+    background-color: #000;
+    padding: 10px 20px;
+    color: #fff;
+    font-family: 'gil-light';
+    font-weight: 800;
+    letter-spacing: 2px;
+    border-radius: 5px;
+}
+
+@media only screen and (max-width: 431px) {
+    .container {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .Search-bar h2 {
+        font-size: 16px;
+        font-family: 'gil-light';
+        color: #fff;
+        /* width: 250px; */
+    }
+}
+
+@media only screen and (max-width: 719px) {
+    .Search-bar {
+        display: flex;
+        flex-direction: column;
+        align-items: normal;
+        justify-content: center;
+    }
+
+    .input {
+        padding: 10px;
+        width: 80%;
+        /* height: 40px; */
+        border: none;
+        border-radius: 5px;
+        font-family: 'gil-light';
+    }
+
+    .right {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .Search-bar h2 {
+        font-size: 18.6px;
+        font-family: 'gil-light';
+        color: #fff;
+        /* width: 250px; */
+    }
+    .button-submit {
+        border: none;
+        background-color: #000;
+        padding: 10px 65px;
+        margin-top: 10px;
+        color: #fff;
+        
+    }
+}
+
+/* search_bar_End */
+/* Hwo there works start */
+@media only screen and (max-width: 404px) {
+    .head {
+        text-align: center;
+
+    }
+
+    .head>h2 {
+        font-family: 'gil-bold';
+        font-size: 2px;
+
+
+    }
+}
+
+.parent_works {
+    background-color: #f9f9f9;
+    padding: 100px;
+}
+
+.head {
+    text-align: center;
+}
+
+.head>h2 {
+    font-family: 'gil-bold';
+    font-size: 44px;
+
+}
+
+.head>h2>span {
+    font-family: 'gil-bold';
+    color: #75BF7A;
+
+}
+
+.head p {
+    color: #9E9DA2;
+}
+
+div {
+    display: block;
+}
+
+/* Hwo there works end */
+
+/* WORKS START */
+/* first-one start */
+.parent-first-one {
+    background-color: #f9f9f9;
+}
+
+.mobile-img {
+    display: none;
+}
+
+.box-one {
+    display: block;
+    width: 300px;
+}
+
+.flecy {
+
+    display: flex;
+    justify-content: space-between;
+}
+
+.circle {
+    position: relative;
+    text-align: end;
+}
+
+.circle p {
+    position: absolute;
+    top: 8px;
+    right: 25px;
+    color: #75BF7A;
+    font-family: 'gil-bold';
+    font-weight: 800;
+    font-size: 34px;
+}
+
+.text {
+    text-align: end;
+}
+
+.text p {
+    font-family: 'gil-light';
+    text-align: end;
+    font-family: 'gil-light';
+
+}
+
+.text h3 {
+    font-family: 'gil-bold';
+    text-align: end;
+    padding-top: 15px;
+
+}
+
+/* first-one End */
+
+/* third start */
+.text-2 p {
+    font-family: 'gil-light';
+
+}
+
+.text-2 h3 {
+    font-family: 'gil-bold';
+    padding-top: 15px;
+
+
+}
+
+.circle-2 {
+    position: relative;
+}
+
+.circle-2 p {
+    position: absolute;
+    top: 8px;
+    left: 22px;
+    color: #75BF7A;
+    font-family: 'gil-bold';
+    font-weight: 800;
+    font-size: 34px;
+}
+
+@media only screen and (max-width: 800px) {
+    .img-circ img {
+        width: 100%;
+        height: 100%;
+        text-align: center;
+
+
+    }
+
+    .main-circ-mob {
+        position: relative;
+    }
+
+    .mobile-img {
+        display: flex;
+        justify-content: center;
+        position: absolute;
+        top: -30px;
+        left: 85px;
+    }
+
+    .flecy {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .main-circ-mob {
+        order: -1;
+        padding: 20px 0px;
+    }
+
+    .text p {
+        font-family: 'gil-light';
+        text-align: center;
+        font-family: 'gil-light';
+
+    }
+
+    .text h3 {
+        font-family: 'gil-bold';
+        text-align: center;
+        padding-top: 15px;
+
+    }
+
+    .circle {
+        position: relative;
+        text-align: center;
+
+    }
+
+    .circle p {
+        position: absolute;
+        right: 143px;
+        text-align: center;
+        color: #75BF7A;
+        font-family: 'gil-bold';
+        font-weight: 800PX;
+        font-size: 34px;
+    }
+
+    .circle-2 {
+        position: relative;
+        text-align: center;
+    }
+
+    .circle-2 p {
+        position: absolute;
+        left: 140px;
+        text-align: center;
+        color: #75BF7A;
+        font-family: 'gil-bold';
+        font-weight: 800PX;
+        font-size: 34px;
+    }
+
+    .text-2 p {
+        font-family: 'gil-light';
+        text-align: center;
+
+    }
+
+    .text-2 h3 {
+        font-family: 'gil-bold';
+        padding-top: 15px;
+        text-align: center;
+
+
+    }
+
+
+}
+
+/* third end */
+/* WORKS End */
+
+/* TERE BENEFITS Start */
+/* heading Start */
+.third-parent {
+    background-color: #f9f9f9;
+}
+
+.heading01 h2 {
+    font-family: 'gil-bold';
+    text-align: center;
+    padding: 100px 0px;
+    color: #000;
+    font-size: 50px;
+}
+
+.heading01>h2>span {
+    color: #75BF7A;
+
+}
+
+/* heading End */
+/* Box one and Three Start */
+.head-box-one {
+    font-family: 'gil-bold';
+    font-weight: 500px;
+    color: #000;
+    width: 200px;
+}
+
+.head-box-one span {
+    font-size: 100px;
+    color: #75BF7A;
+    font-family: 'gil-bold';
+    font-weight: 400px;
+}
+
+.para-box-one {
+    color: #9E9DA2;
+    font-family: 'gil-light';
+    width: 350px;
+}
+
+.block-of-head {
+    display: block;
+    padding-left: 35px;
+    padding-top: 20px;
+}
+
+.boxes-prent {
+    width: 85%;
+    display: flex;
+    justify-content: space-around;
+    background-color: #fff;
+    border-radius: 15px;
+}
+
+.one-of-img {
+    padding: 20px 0px;
+    padding-right: 35px;
+}
+
+.third-parent {
+    padding-bottom: 100px;
+
+}
+
+@media only screen and (max-width:890px) {
+
+    .third-parent {
+        background-color: #f9f9f9;
+        display: flex;
+        align-items: center;
+    }
+
+    .head-box-one {
+        font-family: 'gil-bold';
+        font-weight: 500px;
+        color: #000;
+        width: 200px;
+
+    }
+
+    .head-box-one span {
+        font-size: 100px;
+        color: #75BF7A;
+        font-family: 'gil-bold';
+        font-weight: 400px;
+        text-align: center;
+
+    }
+
+    .para-box-one {
+        color: #9E9DA2;
+        font-family: 'gil-light';
+        width: 100%;
+    }
+
+    .block-of-head {
+        display: block;
+        padding-left: 35px;
+        padding-top: 30px;
+    }
+
+    .boxes-prent {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+
+    }
+
+    .one-of-img {
+        padding: 20px 0px;
+        padding-right: 35px;
+    }
+
+    .third-parent {
+        padding-bottom: 100px;
+
+    }
+
+}
+
+
+/* Second box Start*/
+.head-box-one-2 {
+    font-family: 'gil-bold';
+    font-weight: 500px;
+    color: #000;
+    width: 200px;
+}
+
+.head-box-one-2 span {
+    font-size: 100px;
+    color: #75BF7A;
+    font-family: 'gil-bold';
+    font-weight: 400px;
+}
+
+.para-box-one-2 {
+    color: #9E9DA2;
+    font-family: 'gil-light';
+    width: 350px;
+}
+
+.block-of-head-2 {
+    display: block;
+    padding-left: 35px;
+    padding-top: 20px;
+}
+
+.right-box {
+    display: flex;
+    justify-content: flex-end;
+    padding: 50px 0px;
+}
+
+.boxes-prent-2 {
+
+    width: 85%;
+    display: flex;
+    justify-content: space-around;
+    background-color: #fff;
+    border-radius: 15px;
+}
+
+.one-of-img-2 {
+    padding: 20px 0px;
+    padding-right: 35px;
+    order: -1;
+}
+
+.third-parent-2 {
+    padding-bottom: 100px;
+
+}
+
+
+@media only screen and (max-width:890px) {
+
+    .third-parent-2 {
+        background-color: #f9f9f9;
+        display: flex;
+        align-items: center;
+    }
+
+    .head-box-one-2 {
+        font-family: 'gil-bold';
+        font-weight: 500px;
+        color: #000;
+        width: 200px;
+
+    }
+
+    .head-box-one-2 span {
+        font-size: 100px;
+        color: #75BF7A;
+        font-family: 'gil-bold';
+        font-weight: 400px;
+        text-align: center;
+
+    }
+
+    .para-box-one-2 {
+        color: #9E9DA2;
+        font-family: 'gil-light';
+        width: 100%;
+    }
+
+    .block-of-head-2 {
+        display: block;
+        padding-left: 35px;
+        padding-top: 20px;
+    }
+
+    .boxes-prent-2 {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+
+    }
+
+    .one-of-img-2 {
+        padding: 20px 0px;
+        padding-right: 35px;
+        order: 1;
+    }
+
+    .third-parent-2 {
+        padding-bottom: 100px;
+
+    }
+}
+
+/* Box one and Three  ENd  */
+/* TERE BENEFITS End */
+
+/* Footer_Start */
+.footer-parent {
+    font-family: 'gil-light';
+    color: #9E9DA2;
+    display: flex;
+    justify-content: space-around;
+    padding: 0px 0px;
+}
+
+.Be-Our-Friend h2 {
+    font-family: 'gil-light';
+    font-weight: 500;
+    font-size: 20px;
+    color: #272042;
+    width: 100%;
+}
+
+.Be-Our-Friend p {
+    font-size: 15px;
+}
+
+.play-img>img {
+    width: 150px;
+}
+
+.footer-pa {
+    padding-top: 100px;
+    padding-bottom: 20px;
+}
+
+.underline-footer {
+    border-top: 1px solid #ECECEC;
+    color: #75BF7A;
+    font-family: 'gil-light';
+    text-align: center;
+    width: 100%;
+    font-size: 16px;
+    /* padding-bottom:50px; */
+    line-height: 5;
+
+}
+
+.underline-footer a {
+
+    font-size: 16px;
+    font-family: 'gil-bold';
+    word-spacing: 1.5px;
+    text-decoration: none;
+    color: #75BF7A;
+}
+
+@media only screen and (max-width:890px) {
+    .footer-parent {
+        font-family: 'gil-light';
+        color: #9E9DA2;
+        display: flex;
+        justify-content: space-around;
+        flex-direction: column;
+        padding: 0px 0px;
+        text-align: center;
+    }
+
+    .Be-Our-Friend {
+        padding-top: 20px;
+    }
+
+    .visible {
+        display: none;
+    }
+
+    .footer-pa {
+        padding-top: 50px;
+        padding-bottom: 20px;
+    }
+
+}
+
+/* Footer_End   */
