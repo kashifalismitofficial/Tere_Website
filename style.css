@@ -287,9 +287,11 @@ body {
         display: flex;
         justify-content: center;
         flex-wrap: wrap;
-        width: 550px;
     }
-
+.right input
+{
+    width: 399px;
+}
     .Search-bar h2 {
         font-size: 18.6px;
         font-family: 'gil-light';
